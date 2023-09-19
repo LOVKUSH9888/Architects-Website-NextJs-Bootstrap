@@ -1,7 +1,11 @@
 'use client'
+// Important for the
 import Head from "next/head";
 import Script from "next/script";
+
 import Nav from "./Navbar/page.jsx";
+import Carousel from "./Carousel/page.jsx";
+import Products from "./Projects/page.jsx";
 
 const page = () => {
   return (
@@ -17,6 +21,10 @@ const page = () => {
     </Head>
     {/* Adding Navbar */} 
     <Nav/>
+    {/* Carousel */}
+    <Carousel/>
+    {/* projects */}
+    <Products/>
     
     <Script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
